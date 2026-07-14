@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-import PublicLayout from "../../components/public/public-layout"
+import PublicLayout from "@/components/public/public-layout"
 
 import { Card } from "@/components/ui/card"
 
