@@ -92,8 +92,9 @@ export default function LoginPage() {
       )
 
       const response =
-      await api.post(
-  "/auth/login",
+        await api.post(
+
+          "/api/v1/auth/login",
 
           formData,
 
