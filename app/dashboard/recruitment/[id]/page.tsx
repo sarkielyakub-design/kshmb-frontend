@@ -262,24 +262,6 @@ export default function RecruitmentDetailsPage() {
                 }
 
 
-                {
-                  job.deadline && (
-
-                    <div className="flex items-center gap-4">
-
-                      <CalendarDays className="h-5 w-5 text-cyan-300" />
-
-                      <span>
-
-                        Deadline:
-                        {" "}
-                        {job.deadline}
-
-                      </span>
-
-                    </div>
-                  )
-                }
 
               </div>
 
@@ -478,11 +460,7 @@ export default function RecruitmentDetailsPage() {
 
             <div className="mt-10 whitespace-pre-wrap leading-relaxed text-muted-foreground">
 
-              {
-                job.responsibilities ||
-
-                "Healthcare operations, patient support, departmental collaboration, and medical service delivery."
-              }
+              {"Healthcare operations, patient support, departmental collaboration, and medical service delivery."}
 
             </div>
 

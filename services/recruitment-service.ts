@@ -21,6 +21,10 @@ export interface Job {
   requirements: string
 
   status: string
+  
+  // optional fields returned by the API
+  hospital_name?: string
+  salary_range?: string
 }
 
 
@@ -41,6 +45,14 @@ export interface CreateJobPayload {
   description: string
 
   requirements: string
+
+  hospital_id: number
+
+  salary_range?: string
+
+  responsibilities?: string
+
+  deadline?: string
 }
 
 
@@ -65,6 +77,9 @@ export interface JobApplication {
   job_id?: number
 
   job?: Job
+  
+  // optional fields returned by the API
+  years_of_experience?: number | string
 }
 
 

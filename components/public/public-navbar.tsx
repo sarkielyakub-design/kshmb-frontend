@@ -231,7 +231,7 @@ export default function PublicNavbar() {
               >
 
                 {moreLinks.map((item) => {
-                  const Icon = item.icon
+                  const Icon = item.icon as React.ComponentType<{ className: string }>
 
                   return (
                     <DropdownMenuItem
@@ -342,7 +342,7 @@ export default function PublicNavbar() {
 
               {[...navLinks, ...moreLinks].map((link) => {
 
-                const Icon = 'icon' in link ? link.icon : undefined
+                const Icon = 'icon' in link ? (link.icon as React.ComponentType<{ className: string }>) : undefined
 
                 return (
 
@@ -358,9 +358,9 @@ export default function PublicNavbar() {
                     <div className="h-11 w-11 rounded-2xl bg-blue-50 flex items-center justify-center">
 
                       {
-                        Icon
-                          ? <Icon as="svg" className="h-5 w-5 text-blue-700" />
-                          : <HeartPulse className="h-5 w-5 text-blue-700" />
+                          Icon
+                            ? <Icon className="h-5 w-5 text-blue-700" />
+                            : <HeartPulse className="h-5 w-5 text-blue-700" />
                       }
 
                     </div>

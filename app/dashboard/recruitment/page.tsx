@@ -581,24 +581,6 @@ export default function RecruitmentPage() {
                     }
 
 
-                    {
-                      job.deadline && (
-
-                        <div className="flex items-center gap-3 text-muted-foreground">
-
-                          <CalendarDays className="h-5 w-5" />
-
-                          <span>
-
-                            Deadline:
-                            {" "}
-                            {job.deadline}
-
-                          </span>
-
-                        </div>
-                      )
-                    }
 
                   </div>
 

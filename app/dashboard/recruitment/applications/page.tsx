@@ -606,28 +606,6 @@ export default function ApplicationsPage() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
                         {
-                          application.qualification && (
-
-                            <div className="rounded-2xl bg-slate-100 p-5">
-
-                              <p className="text-sm text-muted-foreground">
-
-                                Qualification
-
-                              </p>
-
-                              <h3 className="font-semibold mt-2">
-
-                                {application.qualification}
-
-                              </h3>
-
-                            </div>
-                          )
-                        }
-
-
-                        {
                           application.years_of_experience && (
 
                             <div className="rounded-2xl bg-slate-100 p-5">
